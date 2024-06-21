@@ -1,6 +1,12 @@
 import streamlit as st
 import pandas as pd
-import yfinance as yf
+# test_yfinance.py
+try:
+    import yfinance as yf
+    print("yfinance imported successfully!")
+except ImportError as e:
+    print(f"Error importing yfinance: {e}")
+
 import matplotlib.pyplot as plt
 import matplotlib.dates as mpl_dates
 from datetime import datetime, timedelta
